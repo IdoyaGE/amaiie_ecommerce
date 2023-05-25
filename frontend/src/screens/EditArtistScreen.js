@@ -52,12 +52,16 @@ export default function EditArtistScreen() {
       formData.append("description", description);
       formData.append("password", password);
 
-      const { data } = await axios.put("https://api.amaiie.lafuentedanel.com/api/users/editprofile", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-          Authorization: `Bearer ${userInfo.token}`,
-        },
-      });
+      const { data } = await axios.put(
+        "https://api.amaiie.miratuweb.online/api/users/editprofile",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+            Authorization: `Bearer ${userInfo.token}`,
+          },
+        }
+      );
 
       dispatch({
         type: "UPDATE_SUCCESS",

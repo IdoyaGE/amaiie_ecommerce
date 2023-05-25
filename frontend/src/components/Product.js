@@ -42,7 +42,7 @@ function Product(props) {
                     }}
                   >
                     <img
-                      src={`https://api.amaiie.lafuentedanel.com/fotoproducto/${product.image}`}
+                      src={`https://api.amaiie.miratuweb.online/fotoproducto/${product.image}`}
                       alt={product.nameproduct}
                       class='img-responsive'
                     />
